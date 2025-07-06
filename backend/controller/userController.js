@@ -5,7 +5,7 @@ const jwtToken = require("jsonwebtoken");
 const RoomsModel = require("../model/roomsSchema");
 const StaffModel = require("../model/addStaffScheam")
 const {sendVerificationEmail,sendWelcomeEmail} = require('../middleware/mail');
-const generateTokenAndSetCookies = require("../middleware/jwtCookees");
+// const generateTokenAndSetCookies = require("../middleware/jwtCookees");
 
 const CreateUser = async (req, res) => {
     try {
@@ -36,9 +36,9 @@ const CreateUser = async (req, res) => {
 
         await user.save();
 
-        // ///
 
-         generateTokenAndSetCookies(res, user._id);
+        //  generateTokenAndSetCookies(res, user._id);
+
          await sendVerificationEmail(user.email, verificationToken);
         
          return res.status(200).json({ message: "User created successfully" });
