@@ -1,5 +1,6 @@
 # Hotel Booking Website with Admin Dashboard
   This is a full-stack hotel booking system that allows users to book rooms and hotel administrators to manage bookings, guests, staff, rooms, and daily operations through a powerful dashboard.
+  # visit = https://hotel-dev-project.vercel.app/
 
 # Project Overview
   The hotel website provides a smooth experience for customers to register, verify their email through OTP, and book rooms. It includes a secure JWT-based authentication system for both users and admins. Admins can view new bookings, manually book rooms, manage staff, generate guest audit PDFs, track room statuses, and maintain daily expense/income records using the Daybook feature.
